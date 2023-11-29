@@ -1,0 +1,63 @@
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.pst-abs {
+   position: absolute;
+}
+
+.g-40 {
+   gap: 40px;
+}
+
+.p-20 {
+   padding: 20px;
+}
+
+.p-100 {
+   padding: 100px;
+}
+
+.w-100p {
+   width: 100%;
+}
+
+.h-100p {
+   height: 100%;
+}
+
+.h-100vh {
+   height: 100vh;
+}
+
+.bg-opacity {
+   background: rgba(26, 26, 26, 0.50);
+   z-index: -1;
+}
+
+.bg-1 {
+   background: #0E0E0E;
+}
+
+.mt-20 {
+   margin-top: 20px;
+}
+
+.mt-300 {
+   margin-top: 300px;
+}
+
+.ml-100 {
+   margin-left: 100px;
+}
+
+.upper-text {
+   text-transform: uppercase;
+}
+
+.btn {
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 1rem;
+   color: #EDEDED;
+}
