@@ -2,6 +2,33 @@
    padding: 50px;
 }
 
+.about {
+   grid-template-columns: 1fr;
+   gap: 80px;
+}
+
+.about-question {
+   max-width: 250px;
+   box-sizing: border-box;
+   background: linear-gradient(180deg, #0E0E0E 0%, #1A1A1A 100%);
+   padding: 25px;
+   height: 350px;
+   border: 1px solid #404040;
+}
+
+.about-question-answer {
+   font-size: 0.8rem;
+   text-align: center;
+   margin-top: 25px;
+}
+
+.about-question-title {
+   font-size: 1.25rem;
+   font-weight: 400;
+   line-height: 1.1;
+   text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
    .about {
       padding: 100px;
