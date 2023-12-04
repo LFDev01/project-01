@@ -1,0 +1,92 @@
+.contact {
+   padding: 50px;
+}
+
+.contact>img {
+   height: 200px;
+   width: 100%;
+   object-fit: cover;
+   object-position: top;
+   margin-top: 50px;
+}
+
+.input-icon {
+   width: 32px;
+   height: 32px;
+}
+
+.user-icon {
+   background: url("../img/svg/contact/user-icon.svg");
+}
+
+.mail-icon {
+   background: url("../img/svg/contact/mail-icon.svg");
+}
+
+.message-icon {
+   background: url("../img/svg/contact/message-icon.svg");
+}
+
+.input {
+   width: 100%;
+   max-width: 250px;
+   height: 100%;
+   outline: none;
+   padding: 20px;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   transition: .2s;
+}
+
+.input:focus {
+   border-color: #706DE0;
+   box-shadow: 0px 0px 10px 0px rgba(112, 109, 224, 0.25);
+}
+
+@media screen and (min-width: 1000px) {
+   .contact {
+      grid-template-columns: 2fr 1fr;
+      padding: 100px;
+   }
+
+   .contact-form {
+      gap: 50px;
+      padding: 100px;
+   }
+
+   .contact h1 {
+      margin-bottom: 100px;
+   }
+
+   .contact>img {
+      grid-column: 2;
+      width: initial;
+      height: 100%;
+      margin: 0px;
+   }
+
+   .input-icon {
+      width: 64px;
+      height: 64px;
+   }
+
+   .user-icon {
+      background: url("../img/svg/contact/user-icon64x.svg");
+   }
+
+   .mail-icon {
+      background: url("../img/svg/contact/mail-icon64x.svg");
+   }
+
+   .message-icon {
+      background: url("../img/svg/contact/message-icon64x.svg");
+   }
+
+   .input {
+      min-width: 600px;
+   }
+
+   .contact-form {
+      grid-row: 2;
+   }
+}

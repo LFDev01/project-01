@@ -18,17 +18,18 @@
          <ul class="navigation-menu flex">
             <li class="flex flex-dir-cl pst-rel">
                <p href="" class="btn-1 upper-text">Produtos</p>
+
                <input type="checkbox" class="dropdown-button">
 
                <div class="dropdown-items-container">
                   <div class="dropdown-item flex g-10 al-i-cnt">
                      <img src="./img/svg/smartphone.svg" alt="">
-                     <a href="" class="dropdown-option upper-text btn-2">Smartphones</a>
+                     <a href="" class="dropdown-option btn-2">Smartphones</a>
                   </div>
 
                   <div class="dropdown-item flex g-10 al-i-cnt">
                      <img src="./img/svg/laptop.svg" alt="">
-                     <a href="" class="dropdown-option upper-text btn-2">Laptops</a>
+                     <a href="" class="dropdown-option btn-2">Laptops</a>
                   </div>
 
                </div>
@@ -39,41 +40,40 @@
             </li>
 
             <li>
-               <a href="" class="btn-1 upper-text">Contato</a>
+               <a href="#contact" class="btn-1">Contato</a>
             </li>
          </ul>
 
          <div class="navigation-account flex g-10">
-            <a href="" class="btn-1 upper-text">Minha Conta</a>
+            <a href="" class="btn-1">Minha Conta</a>
             <div class="navigation-account-image"></div>
          </div>
       </nav>
 
-      <h1 class="header-title c-1 txt-al-cnt">Explore Inovações Tecnológicas<span>.</span></h1>
-
+      <h1 class="header-title c-1">Explore Inovações Tecnológicas<span>.</span></h1>
    </header>
 
-   <main class="about bg-2 grid jf-c-cnt jf-i-cnt" id="about">
-      <h1 class="upper-text title-color-1">Sobre Nós</h1>
+   <main class="about bg-2 grid jf-i-cnt" id="about">
+      <h1 class="tf title-1 upper-text c-1 grid-span">Sobre Nós</h1>
 
       <div class="about-question">
-         <div class="flex g-10 jf-c-cnt">
-            <!-- <img src="" alt=""> -->
-            <h2 class="about-question-title c-1 upper-text">Quem somos?</h2>
+         <div class="question-container flex g-10">
+            <img src="./img/svg/about/question-1.svg" alt="">
+            <h2 class="tf title-2 c-1 upper-text">Quem somos?</h2>
          </div>
 
-         <p class="about-question-answer c-1">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
+         <p class="text-small c-1 mt-25">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
             smartphones, laptops e
             acessórios. </p>
       </div>
 
       <div class="about-question">
-         <div class="flex g-10 jf-c-cnt">
-            <img src="" alt="">
-            <h2 class="about-question-title c-1 title-color-1 upper-text">O que fazemos?</h2>
+         <div class="question-container flex g-10">
+            <img src="./img/svg/about/question-2.svg" alt="">
+            <h2 class="tf title-2 c-1 upper-text">O que fazemos?</h2>
          </div>
 
-         <p class="about-question-answer c-1">Nosso foco é proporcionar uma experiência tecnológica excepcional,
+         <p class="text-small c-1 mt-25">Nosso foco é proporcionar uma experiência tecnológica excepcional,
             oferecendo
             uma ampla
             variedade de
@@ -81,20 +81,47 @@
       </div>
 
       <div class="about-question">
-         <div class="flex g-10 jf-c-cnt">
-            <img src="" alt="">
-            <h2 class="about-question-title c-1 upper-text">Por quê?</h2>
+         <div class="question-container flex g-10">
+            <img src="./img/svg/about/question-3.svg" alt="">
+            <h2 class="tf title-2 c-1 upper-text">Por quê?</h2>
          </div>
 
-         <p class="about-question-answer c-1">Porque acreditamos que a tecnologia tem o poder de transformar vidas.
-            Nosso
-            propósito é
-            proporcionar
-            inovação acessível, simplificando o acesso a produtos de alta qualidade que elevam a experiência digital.
-         </p>
+         <p class="text-small c-1 mt-20">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
       </div>
 
    </main>
+
+   <div class="parallax-image"></div>
+
+   <section class="contact grid jf-c-cnt" id="contact">
+      <h1 class="title-1 c-2 upper-text grid-span">Fale Conosco.</h1>
+
+      <img src="./img/contact-image.png" alt="">
+
+      <form action="/" class="bg-3 contact-form grid al-c-st jf-c-cnt">
+
+         <div class="form-input-container flex">
+            <div class="input-icon user-icon"></div>
+            <input type="text" class="input">
+            <label for=""></label>
+         </div>
+
+         <div class="form-input-container flex">
+            <div class="input-icon mail-icon"></div>
+            <input type="text" class="input">
+            <label for=""></label>
+         </div>
+
+         <div class="form-input-container flex">
+            <div class="input-icon message-icon"></div>
+            <textarea name="" id="" cols="30" rows="10" class="input"></textarea>
+            <label for=""></label>
+         </div>
+
+         <button class="btn-3 jf-sf-st">Enviar</button>
+      </form>
+
+   </section>
 </body>
 
 </html>

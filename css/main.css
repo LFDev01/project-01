@@ -1,7 +1,9 @@
 @import "./resets.css";
 @import "./scrollbar.css";
 @import "./fonts.css";
-@import "./utilitary.css";
 @import "./header.css";
 @import "./header-dropdown.css";
 @import "./about.css";
+@import "./parallax.css";
+@import "./contact.css";
+@import "./utilitary.css";

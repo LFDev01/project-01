@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 1000px) {
    .dropdown-button {
-      right: -30px;
+      right: -35px;
    }
 
    .dropdown-items-container {
@@ -73,6 +73,6 @@
    }
 
    .dropdown-item:hover img {
-      fill: #0E0E0E;
+      src: url("../img/svg/smartphone-hover.svg");
    }
 }

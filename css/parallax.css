@@ -1,0 +1,13 @@
+.parallax-image {
+   width: 100%;
+   height: 450px;
+   background-attachment: fixed;
+   background-size: cover;
+   background-image: url("../img/parallax-image.png"); 
+}
+
+@media screen and (min-width: 1000px) {
+   .parallax-image {
+      height: 800px;
+   }
+}
