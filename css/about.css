@@ -1,15 +1,15 @@
-.about {
+.question-list {
    grid-template-columns: 1fr;
-   gap: 80px;
+   gap: 50px;
    padding: 50px;
 }
 
 .about-question {
-   max-width: 250px;
-   background: linear-gradient(180deg, #0E0E0E 0%, #1A1A1A 100%);
-   padding: 40px 20px;
+   max-width: 260px;
    height: 350px;
-   border: 1px solid #404040;
+   padding: 2rem 1rem;
+   background: linear-gradient(180deg, #0E0E0E 0%, #1A1A1A 100%);
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
    box-sizing: border-box;
 }
 
@@ -28,15 +28,19 @@
 }
 
 @media screen and (min-width: 1000px) {
-   .about {
-      padding: 100px;
+   .question-list {
       grid-template-columns: repeat(3, auto);
+      gap: 100px;
+      padding: 100px;
    }
 
    .about-question {
-      max-width: 400px;
-      height: 500px;
-      padding: 50px 25px;
+      max-width: 450px;
+      height: 600px;
+      padding: 2.5rem;
    }
 
+   .question-container {
+      place-content: start;
+   }
 }

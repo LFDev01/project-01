@@ -18,7 +18,7 @@
    width: 100%;
    height: 100vh;
    flex-direction: column;
-   align-items: center;
+   align-content: center;
    transform: translateX(-100%);
    padding: 100px 0px 0px 0px;
    transition: .2s;
@@ -28,6 +28,7 @@
    top: 0px;
    background: #0E0E0E;
    gap: 40px;
+   text-align: center;
 }
 
 .navigation-menu li {
@@ -63,14 +64,18 @@
 }
 
 .header-title {
-   font-family: "Titillium Web", sans-serif;
    margin-top: 200px;
    font-size: 2rem;
-   line-height: 1.3;
+   text-align: center;
+   max-width: 250px;
 }
 
 .header-title>span {
    color: #706DE0;
+}
+
+.dropdown-item {
+   align-self: center;
 }
 
 @media screen and (min-width: 1000px) {
@@ -114,11 +119,17 @@
       display: none;
    }
 
+   .dropdown-item {
+      align-self: initial;
+   }
+
    .header-title {
-      font-size: 4.5rem;
-      max-width: 1000px;
+      font-size: 6rem;
+      max-width: 800px;
       text-align: left;
       margin-left: 100px;
       margin-top: 400px;
    }
+
+
 }

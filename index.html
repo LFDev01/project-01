@@ -12,31 +12,30 @@
    <header class="header h-100vh flex pst-rel">
       <div class="pst-abs w-100p h-100p bg-opacity"></div>
 
-      <nav class="navigation flex w-100p bg-1">
+      <nav class="f-2 flex w-100p bg-1 navigation">
          <input type="checkbox" class="mobile-menu">
 
          <ul class="navigation-menu flex">
             <li class="flex flex-dir-cl pst-rel">
-               <p href="" class="btn-1 upper-text">Produtos</p>
+               <p href="" class="btf btn-1">Produtos</p>
 
                <input type="checkbox" class="dropdown-button">
 
                <div class="dropdown-items-container">
                   <div class="dropdown-item flex g-10 al-i-cnt">
                      <img src="./img/svg/smartphone.svg" alt="">
-                     <a href="" class="dropdown-option btn-2">Smartphones</a>
+                     <a href="./products/smartphones/smartphones.html" class="dropdown-option btn-2">Smartphones</a>
                   </div>
 
                   <div class="dropdown-item flex g-10 al-i-cnt">
                      <img src="./img/svg/laptop.svg" alt="">
                      <a href="" class="dropdown-option btn-2">Laptops</a>
                   </div>
-
                </div>
             </li>
 
             <li>
-               <a href="#about" class="btn-1 upper-text">Sobre</a>
+               <a href="#about" class="btn-1">Sobre</a>
             </li>
 
             <li>
@@ -50,55 +49,55 @@
          </div>
       </nav>
 
-      <h1 class="header-title c-1">Explore Inovações Tecnológicas<span>.</span></h1>
+      <h1 class="f-1 c-1 header-title">Explore Inovações Tecnológicas<span>.</span></h1>
    </header>
 
-   <main class="about bg-2 grid jf-i-cnt" id="about">
-      <h1 class="tf title-1 upper-text c-1 grid-span">Sobre Nós</h1>
+   <main class="bg-2" id="about">
+      <h1 class="f-1 title-1 upper-text c-1 grid-span">Sobre Nós</h1>
 
-      <div class="about-question">
-         <div class="question-container flex g-10">
-            <img src="./img/svg/about/question-1.svg" alt="">
-            <h2 class="tf title-2 c-1 upper-text">Quem somos?</h2>
-         </div>
+      <ul class="question-list grid jf-c-cnt jf-i-cnt">
+         <li class="about-question">
+            <div class="question-container flex g-10">
+               <img src="./img/svg/about/question-1.svg" alt="" class="icon-1">
+               <h2 class="tf title-2 c-1 upper-text">Quem somos?</h2>
+            </div>
 
-         <p class="text-small c-1 mt-25">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
-            smartphones, laptops e
-            acessórios. </p>
-      </div>
+            <p class="text-small c-1 mt-25">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
+               smartphones, laptops e
+               acessórios. </p>
+         </li>
 
-      <div class="about-question">
-         <div class="question-container flex g-10">
-            <img src="./img/svg/about/question-2.svg" alt="">
-            <h2 class="tf title-2 c-1 upper-text">O que fazemos?</h2>
-         </div>
+         <li class="about-question">
+            <div class="question-container flex g-10">
+               <img src="./img/svg/about/question-2.svg" alt="" class="icon-1">
+               <h2 class="tf title-2 c-1 upper-text">O que fazemos?</h2>
+            </div>
 
-         <p class="text-small c-1 mt-25">Nosso foco é proporcionar uma experiência tecnológica excepcional,
-            oferecendo
-            uma ampla
-            variedade de
-            produtos inovadores, como smartphones, laptops e acessórios de alta qualidade.</p>
-      </div>
+            <p class="text-small c-1 mt-25">Nosso foco é proporcionar uma experiência tecnológica excepcional,
+               oferecendo uma ampla variedade de produtos inovadores, como smartphones, laptops e acessórios de alta
+               qualidade.</p>
+         </li>
 
-      <div class="about-question">
-         <div class="question-container flex g-10">
-            <img src="./img/svg/about/question-3.svg" alt="">
-            <h2 class="tf title-2 c-1 upper-text">Por quê?</h2>
-         </div>
+         <li class="about-question">
+            <div class="question-container flex g-10">
+               <img src="./img/svg/about/question-3.svg" alt="" class="icon-1">
+               <h2 class="tf title-2 c-1 upper-text">Por quê?</h2>
+            </div>
 
-         <p class="text-small c-1 mt-20">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
-      </div>
+            <p class="text-small c-1 mt-20">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
+         </li>
 
+      </ul>
    </main>
 
    <div class="parallax-image"></div>
 
-   <section class="contact grid jf-c-cnt" id="contact">
-      <h1 class="title-1 c-2 upper-text grid-span">Fale Conosco.</h1>
+   <section class="grid contact" id="contact">
+      <h1 class="f-1  title-1 c-2 upper-text grid-span">Fale Conosco.</h1>
 
       <img src="./img/contact-image.png" alt="">
 
-      <form action="/" class="bg-3 contact-form grid al-c-st jf-c-cnt">
+      <form action="/" class="grid bg-3 contact-form">
 
          <div class="form-input-container flex">
             <div class="input-icon user-icon"></div>
@@ -118,10 +117,11 @@
             <label for=""></label>
          </div>
 
-         <button class="btn-3 jf-sf-st">Enviar</button>
+         <button class="btn-3 jf-sf-st upper-text">Enviar</button>
       </form>
 
    </section>
+
 </body>
 
 </html>

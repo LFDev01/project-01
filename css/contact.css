@@ -1,13 +1,18 @@
 .contact {
-   padding: 50px;
+   padding: 1.5rem;
 }
 
 .contact>img {
    height: 200px;
    width: 100%;
    object-fit: cover;
-   object-position: top;
    margin-top: 50px;
+}
+
+.contact-form {
+   gap: 1rem;
+   padding: 1rem;
+   justify-content: center;
 }
 
 .input-icon {
@@ -28,11 +33,9 @@
 }
 
 .input {
-   width: 100%;
-   max-width: 250px;
+   width: 250px;
    height: 100%;
    outline: none;
-   padding: 20px;
    box-sizing: border-box;
    border: 2px solid transparent;
    transition: .2s;

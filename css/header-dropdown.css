@@ -6,7 +6,7 @@
    background-image: url("../img/svg/dropdown-icon.svg");
    transition: .2s;
    cursor: pointer;
-   right: 30px;
+   right: 0px;
    top: -5px;
 }
 
