@@ -3,6 +3,10 @@
    flex-wrap: wrap;
 }
 
+.flex-1 {
+   flex: 1;
+}
+
 .grid {
    display: grid;
 }
@@ -202,9 +206,9 @@
    height: 32px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
    .title-1 {
-      font-size: 3rem;
+      font-size: 4rem;
    }
 
    .text-small {

@@ -1,8 +1,10 @@
-.contact {
-   padding: 1.5rem;
+/* Mobile */
+
+.contact-section {
+   padding: 50px;
 }
 
-.contact>img {
+.contact-section > img {
    height: 200px;
    width: 100%;
    object-fit: cover;
@@ -10,9 +12,11 @@
 }
 
 .contact-form {
-   gap: 1rem;
-   padding: 1rem;
-   justify-content: center;
+   padding: 25px;
+}
+
+.input-container+.input-container {
+   margin-top: 25px;
 }
 
 .input-icon {
@@ -20,25 +24,12 @@
    height: 32px;
 }
 
-.user-icon {
-   background: url("../img/svg/contact/user-icon.svg");
-}
-
-.mail-icon {
-   background: url("../img/svg/contact/mail-icon.svg");
-}
-
-.message-icon {
-   background: url("../img/svg/contact/message-icon.svg");
-}
-
 .input {
-   width: 250px;
-   height: 100%;
+   flex: 1;
    outline: none;
-   box-sizing: border-box;
    border: 2px solid transparent;
    transition: .2s;
+   box-sizing: border-box;
 }
 
 .input:focus {
@@ -46,50 +37,55 @@
    box-shadow: 0px 0px 10px 0px rgba(112, 109, 224, 0.25);
 }
 
-@media screen and (min-width: 1000px) {
-   .contact {
+.send-btn {
+   margin-top: 25px;
+}
+
+/* Tablet */
+@media screen and (min-width: 0px){}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+   .contact-section {
       grid-template-columns: 2fr 1fr;
       padding: 100px;
    }
-
-   .contact-form {
-      gap: 50px;
-      padding: 100px;
-   }
-
-   .contact h1 {
+   
+   .contact-section > h1 {
       margin-bottom: 100px;
    }
 
-   .contact>img {
+   .contact-section > img {
       grid-column: 2;
       width: initial;
       height: 100%;
       margin: 0px;
    }
 
+   .contact-form {
+      padding: 100px;
+      grid-row: 2;
+   }
+
+   .form-input-container {
+      max-width: 700px;
+      margin: 0 auto;
+   }
+
+   .input-container+.input-container {
+      margin-top: 50px;
+   }
+   
    .input-icon {
       width: 64px;
       height: 64px;
    }
 
-   .user-icon {
-      background: url("../img/svg/contact/user-icon64x.svg");
-   }
-
-   .mail-icon {
-      background: url("../img/svg/contact/mail-icon64x.svg");
-   }
-
-   .message-icon {
-      background: url("../img/svg/contact/message-icon64x.svg");
-   }
-
    .input {
-      min-width: 600px;
+      font-size: 1rem;
    }
 
-   .contact-form {
-      grid-row: 2;
+   .send-btn {
+      margin-top: 100px;
    }
 }
