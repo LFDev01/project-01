@@ -1,10 +1,10 @@
 /* Mobile */
 
 .contact-section {
-   padding: 50px;
+   padding: 50px 25px;
 }
 
-.contact-section > img {
+.contact-section>img {
    height: 200px;
    width: 100%;
    object-fit: cover;
@@ -12,24 +12,42 @@
 }
 
 .contact-form {
-   padding: 25px;
+   padding: 30px;
+}
+
+.contact-form .input-container:last-child() {
+   background-color: purple;
 }
 
 .input-container+.input-container {
-   margin-top: 25px;
+   margin-top: 30px;
 }
 
-.input-icon {
-   width: 32px;
-   height: 32px;
+.input-container {
+   position: relative;
+   gap: 5px;
 }
 
 .input {
    flex: 1;
    outline: none;
    border: 2px solid transparent;
-   transition: .2s;
    box-sizing: border-box;
+   transition: .2s;
+   color: #717171;
+}
+
+.input-label {
+   position: absolute;
+   font-size: 0.8rem;
+   border-bottom: 2px solid transparent;
+   transition: .2s;
+   left: 50px;
+   display: block;
+}
+
+.msg-label {
+   margin-top: 8px;
 }
 
 .input:focus {
@@ -37,25 +55,39 @@
    box-shadow: 0px 0px 10px 0px rgba(112, 109, 224, 0.25);
 }
 
+.input:focus+.input-label {
+   transform: translateY(-137%);
+   border-color: #fff;
+   transition: .2s;
+}
+
+.input:not(:placeholder-shown, :focus)+.input-label {
+   opacity: 0.0;
+}
+
+.input-message {
+   height: 128px;
+}
+
 .send-btn {
    margin-top: 25px;
 }
 
 /* Tablet */
-@media screen and (min-width: 0px){}
+@media screen and (min-width: 0px) {}
 
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
    .contact-section {
       grid-template-columns: 2fr 1fr;
       padding: 100px;
    }
-   
-   .contact-section > h1 {
+
+   .contact-section>h1 {
       margin-bottom: 100px;
    }
 
-   .contact-section > img {
+   .contact-section>img {
       grid-column: 2;
       width: initial;
       height: 100%;
@@ -67,25 +99,40 @@
       grid-row: 2;
    }
 
-   .form-input-container {
-      max-width: 700px;
-      margin: 0 auto;
+   .input-container {
+      gap: 10px;
+      /* max-width: 700px;
+      margin: 0 auto; */
    }
 
    .input-container+.input-container {
       margin-top: 50px;
    }
-   
+
    .input-icon {
       width: 64px;
       height: 64px;
    }
 
    .input {
-      font-size: 1rem;
+      font-size: 1.25rem;
+      padding: 10px;
+   }
+
+   .input-label {
+      left: 90px;
+      font-size: 1.2rem;
+   }
+
+   .input:focus+.input-label {
+      margin-bottom: 85px;
+   }
+
+   .input-message {
+      height: 260px;
    }
 
    .send-btn {
-      margin-top: 100px;
+      margin-top: 50px;
    }
 }
