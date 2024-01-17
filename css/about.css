@@ -17,6 +17,7 @@
    background: linear-gradient(180deg, #0E0E0E 0%, #1A1A1A 100%);
    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
    box-sizing: border-box;
+   border-radius: 10px;
 }
 
 .about-question p {
@@ -37,14 +38,13 @@
    margin-top: 15px;
 }
 
-@media screen and (min-width: 1000px) {
-
+@media screen and (min-width: 1200px) {
    .about {
       padding: 100px;
    }
 
-   .about h1 {
-      margin-bottom: 100px;
+   .about>h1 {
+      margin-bottom: 50px;
    }
 
    .question-list {

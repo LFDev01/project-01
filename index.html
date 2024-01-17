@@ -9,10 +9,10 @@
 </head>
 
 <body>
-   <header class="header h-100vh flex pst-rel">
+   <header class="h-100vh flex pst-rel header">
       <div class="pst-abs w-100p h-100p bg-opacity"></div>
 
-      <nav class="f-2 flex w-100p bg-1 navigation">
+      <nav class="f-2 flex w-100p navigation">
          <input type="checkbox" class="mobile-menu">
 
          <ul class="navigation-menu flex">
@@ -22,15 +22,38 @@
                <input type="checkbox" class="dropdown-button">
 
                <div class="dropdown-items-container">
-                  <div class="dropdown-item flex g-10 al-i-cnt">
-                     <img src="./img/svg/smartphone.svg" alt="">
-                     <a href="./products/smartphones/smartphones.html" class="dropdown-option btn-2">Smartphones</a>
-                  </div>
 
-                  <div class="dropdown-item flex g-10 al-i-cnt">
-                     <img src="./img/svg/laptop.svg" alt="">
-                     <a href="" class="dropdown-option btn-2">Laptops</a>
-                  </div>
+                  <a href="./pages/products/smartphones/smartphones.html"
+                     class="dropdown-item flex g-10 al-i-cnt btn-2">
+
+                     <div class="dropdown-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M7 23C6.45 23 5.97917 22.8042 5.5875 22.4125C5.19583 22.0208 5 21.55 5 21V3C5 2.45 5.19583 1.97917 5.5875 1.5875C5.97917 1.19583 6.45 1 7 1H17C17.55 1 18.0208 1.19583 18.4125 1.5875C18.8042 1.97917 19 2.45 19 3V21C19 21.55 18.8042 22.0208 18.4125 22.4125C18.0208 22.8042 17.55 23 17 23H7ZM7 20V21H17V20H7ZM7 18H17V6H7V18ZM7 4H17V3H7V4Z"
+                              fill="#EDEDED" />
+                        </svg>
+                     </div>
+                     <span class="">Smartphones</span>
+                  </a>
+
+                  <a href="" class="dropdown-item flex g-10 btn-2">
+
+                     <div class="dropdown-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_18_21)">
+                              <path d="M0 20V18H2V3H22V18H24V20H0ZM10 18H14V17H10V18ZM4 15H20V5H4V15Z" fill="#EDEDED" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_18_21">
+                                 <rect width="24" height="24" fill="white" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+
+                     <span>Laptops</span>
+                  </a>
+
                </div>
             </li>
 
@@ -44,47 +67,48 @@
          </ul>
 
          <div class="navigation-account flex g-10">
-            <a href="" class="btn-1">Minha Conta</a>
-            <div class="navigation-account-image"></div>
+            <a href="./pages/login/login.html" class="btn-1">Minha Conta</a>
+            <img src="./img/svg/header/account.svg" alt="" class="wh-1">
          </div>
       </nav>
 
-      <h1 class="f-1 c-1 header-title">Explore Inovações Tecnológicas<span>.</span></h1>
+      <h1 class="f-1 fw-1 c-1 header-title">Explore Inovações Tecnológicas<span class="c-4">.</span></h1>
    </header>
 
    <main class="bg-2 about" id="about">
-      <h1 class="f-1 title-1 upper-text c-1 grid-span">Sobre Nós</h1>
+      <h1 class="f-1 fw-3 tt-1 upper-text c-1 grid-span">Sobre Nós<span class="detail-c-1">.</span></h1>
 
-      <ul class="question-list flex jf-c-cnt">
+      <ul class="flex jf-c-cnt question-list">
          <li class="about-question">
             <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-1.svg" alt="" class="icon-1">
-               <h2 class="f-1 title-2 c-1 upper-text">Quem somos?</h2>
+               <img src="./img/svg/about/question-1.svg" alt="" class="wh-2">
+               <h2 class="f-1 fw-1 tt-2 c-1 upper-text">Quem somos?</h2>
             </div>
 
-            <p class="f-1 text-small c-1">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
+            <p class="f-1 txt-1 c-1">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
                smartphones, laptops e
-               acessórios. </p>
+               acessórios.
+            </p>
          </li>
 
          <li class="about-question">
             <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-2.svg" alt="" class="icon-1">
-               <h2 class="f-1 title-2 c-1 upper-text">O que fazemos?</h2>
+               <img src="./img/svg/about/question-2.svg" alt="" class="wh-2">
+               <h2 class="f-1 fw-1 tt-2 c-1">O que fazemos?</h2>
             </div>
 
-            <p class="f-1 text-small c-1">Nosso foco é proporcionar uma experiência tecnológica excepcional,
+            <p class="f-1 txt-1 c-1">Nosso foco é proporcionar uma experiência tecnológica excepcional,
                oferecendo uma ampla variedade de produtos inovadores, como smartphones, laptops e acessórios de alta
                qualidade.</p>
          </li>
 
          <li class="about-question">
             <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-3.svg" alt="" class="icon-1">
-               <h2 class="f-1 title-2 c-1 upper-text">Por quê?</h2>
+               <img src="./img/svg/about/question-3.svg" alt="" class="wh-2">
+               <h2 class="f-1 fw-1 tt-2 c-1">Por quê?</h2>
             </div>
 
-            <p class="f-1 text-small c-1">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
+            <p class="f-1 txt-1 c-1">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
          </li>
 
       </ul>
@@ -93,31 +117,32 @@
    <div class="parallax-image"></div>
 
    <section class="grid contact-section" id="contact">
-      <h1 class="f-1  title-1 c-2 upper-text grid-span">Fale Conosco.</h1>
+      <h1 class="f-1 fw-3 tt-1 c-2 upper-text grid-span">Fale Conosco<span class="c-4">.</span></h1>
 
       <img src="./img/contact-image.png" alt="">
 
       <form action="/" class="bg-3 contact-form">
 
          <div class="input-container flex">
-            <img src="./img/svg/contact/user-icon.svg" alt="" class="icon-1">
-            <input type="text" class="input f-1" id="name" placeholder=" " required>
-            <label for="name" class="input-label al-sf-cnt">Nome</label>
+            <img src="./img/svg/contact/user-icon.svg" alt="" class="wh-2">
+            <input type="text" class="input f-1 flex-1" id="name" placeholder=" " required>
+            <label for="name" class="input-label f-2 al-sf-cnt">Nome</label>
          </div>
 
          <div class="input-container flex">
-            <img src="./img/svg/contact/mail-icon.svg" alt="" class="icon-1">
-            <input type="email" class="input f-1" id="email" placeholder=" " required>
-            <label for="email" class="input-label al-sf-cnt">E-mail</label>
+            <img src="./img/svg/contact/mail-icon.svg" alt="" class="wh-2">
+            <input type="email" class="input f-1 flex-1" id="email" placeholder=" " required>
+            <label for="email" class="input-label f-2 al-sf-cnt">E-mail</label>
          </div>
 
          <div class="input-container flex">
-            <img src="./img/svg/contact/message-icon.svg" alt="" class="icon-1 al-sf-st">
-            <textarea name="" id="" class="input f-1 input-message" id="message" placeholder=" " required></textarea>
-            <label for="message" class="input-label msg-label">Mensagem</label>
+            <img src="./img/svg/contact/message-icon.svg" alt="" class="wh-2 al-sf-st">
+            <textarea name="" id="" class="input f-1 flex-1 message-input" id="message" placeholder=" "
+               required></textarea>
+            <label for="message" class="input-label f-2 message-label">Mensagem</label>
          </div>
 
-         <button class="btn-3 upper-text send-btn">Enviar</button>
+         <button class="btn-3 fw-3 upper-text send-btn">Enviar</button>
       </form>
 
    </section>

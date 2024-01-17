@@ -1,0 +1,13 @@
+.header {
+   background-color: #0E0E0E;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 1;
+}
+
+.navigation-items {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
