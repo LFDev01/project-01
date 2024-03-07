@@ -5,6 +5,7 @@
    background-size: cover;
    z-index: 1;
    justify-content: center;
+   position: relative;
 }
 
 .navigation {
@@ -12,6 +13,7 @@
    justify-content: space-between;
    box-sizing: border-box;
    padding: 10px;
+   z-index: 3;
 }
 
 .navigation-menu {
@@ -19,6 +21,7 @@
    height: 100vh;
    flex-direction: column;
    align-content: center;
+   align-items: center;
    transform: translateX(-100%);
    padding: 100px 0px 0px 0px;
    transition: .2s;
@@ -29,10 +32,6 @@
    background: #0E0E0E;
    gap: 40px;
    text-align: center;
-}
-
-.navigation-menu li {
-   min-width: 150px;
 }
 
 .mobile-menu {
@@ -53,12 +52,21 @@
    transform: translateX(0%);
 }
 
+html:has(.mobile-menu:checked) {
+   overflow: hidden;
+}
+
+/* A pseudo classe has seleciona um elemento que contém outro elemento que foi passado como argumento para a função. Este elemento que está contido pode assumir diferentes estados para deixar a seleção mais específica. */
+
 .navigation-account {
+   display: flex;
    align-items: center;
+   text-transform: uppercase;
+   transition: .2s;
 }
 
 .header-title {
-   margin-top: 200px;
+   padding-top: 200px;
    font-size: 2rem;
    text-align: center;
    max-width: 250px;
@@ -88,7 +96,8 @@
       padding: 0px;
       background: none;
       width: initial;
-      gap: 60px;
+      gap: 50px;
+      align-items: center;
    }
 
    .navigation-menu li {
@@ -98,6 +107,8 @@
    .navigation-account {
       position: absolute;
       right: 20px;
+      text-transform: uppercase;
+      gap: 5px;
    }
 
    .mobile-menu {
@@ -112,7 +123,7 @@
       font-size: 6rem;
       max-width: 800px;
       text-align: left;
-      margin-left: 100px;
-      margin-top: 400px;
+      padding-left: 100px;
+      padding-top: 400px;
    }
 }

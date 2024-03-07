@@ -2,6 +2,6 @@
 @import "../../../../css/resets.css";
 @import "../../../../css/utilitary.css";
 @import "../../../../css/scroll.css";
-@import "./header.css";
-@import "./smartphone-list.css";
-@import "./background.css";
+@import "../css/background.css";
+@import "../css/header.css";
+@import "../css/product-list.css";

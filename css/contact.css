@@ -8,7 +8,6 @@
    height: 200px;
    width: 100%;
    object-fit: cover;
-   border-radius: 10px 10px 0px 0px;
 }
 
 .contact-section>h1 {
@@ -17,7 +16,6 @@
 
 .contact-form {
    padding: 25px;
-   border-radius: 0px 0px 10px 10px;
 }
 
 .message-label {
@@ -29,7 +27,7 @@
 }
 
 .send-btn {
-   margin-top: 25px;
+   margin-top: 50px;
 }
 
 /* Tablet */
@@ -47,7 +45,6 @@
       width: initial;
       height: 100%;
       margin: 0px;
-      border-radius: 0px 10px 10px 0px;
    }
 
    .contact-section>h1 {
@@ -57,7 +54,6 @@
    .contact-form {
       padding: 100px;
       grid-row: 2;
-      border-radius: 10px 0px 0px 10px;
    }
 
    .input-container {
@@ -74,10 +70,10 @@
    }
 
    .message-label {
-      margin-top: 18px;
+      margin-top: 19px;
    }
 
    .send-btn {
-      margin-top: 50px;
+      margin-top: 100px;
    }
 }

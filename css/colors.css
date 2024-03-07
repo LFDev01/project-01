@@ -1,0 +1,26 @@
+:root {
+   --c-1: #F7F7F7;
+   --c-2: #1A1A1A;
+   --c-3: #EDEDED;
+   --c-4: #706DE0;
+}
+
+.c-1 {
+   color: var(--c-1);
+}
+
+.c-2 {
+   color: var(--c-2);
+}
+
+.c-3 {
+   color: var(--c-3);
+}
+
+.c-4 {
+   color: var(--c-4);
+}
+
+body {
+   background-image: none;
+}
