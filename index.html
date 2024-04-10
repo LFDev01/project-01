@@ -5,27 +5,27 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Página Inicial</title>
-   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-   <header class="h-100vh flex header">
-      <div class="pst-abs w-100p h-100p bg-opacity"></div>
+   <header class="header">
+      <div class="bg-opacity"></div>
 
-      <nav class="f-2 flex w-100p navigation">
-         <input type="checkbox" class="mobile-menu">
+      <nav class="navigation"> 
+         <input type="checkbox" id="mobile-menu">
 
-         <ul class="navigation-menu flex">
-            <li class="flex flex-dir-cl pst-rel">
+         <ul class="navigation-menu">
+            <li class="dropdown-container">
 
                <div class="dropdown-button">
-                  <p href="" class="btn-1">Produtos</p>
+                  <p href="" class="hbf">Produtos</p>
                   <img src="./img/svg/header/dropdown-icon.svg" alt="" class="dropdown-icon">
                </div>
 
                <div class="dropdown-items-container">
 
-                  <a href="./pages/products/smartphones.html" class="dropdown-item flex g-10 al-i-cnt btn-2">
+                  <a href="./pages/products/smartphones.html" class="dropdown-item">
 
                      <div class="dropdown-item-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,10 +34,10 @@
                               fill="#EDEDED" />
                         </svg>
                      </div>
-                     <span class="">Smartphones</span>
+                     <span class="hbf-2">Smartphones</span>
                   </a>
 
-                  <a href="./pages/products/laptops.html" class="dropdown-item flex g-10 btn-2">
+                  <a href="./pages/products/laptops.html" class="dropdown-item">
 
                      <div class="dropdown-item-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,104 +52,111 @@
                         </svg>
                      </div>
 
-                     <span>Laptops</span>
+                     <span class="hbf-2">Laptops</span>
+                  </a>
+
+                  <a href="./pages/products/smartwatches.html" class="dropdown-item">
+
+                     <div class="dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#EDEDED"><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"/></svg>
+                     </div>
+
+                     <span class="hbf-2">Smartwatches</span>
                   </a>
 
                </div>
             </li>
 
             <li>
-               <a href="#about" class="btn-1">Sobre</a>
+               <a href="#about" class="hbf">Sobre</a>
             </li>
 
             <li>
-               <a href="#contact" class="btn-1">Contato</a>
+               <a href="#contact" class="hbf">Contato</a>
             </li>
          </ul>
 
-         <a href="pages/login/login.html" class="navigation-account c-3">
+         <a href="pages/login/login.html" class="hbf navigation-account">
             Minha Conta
             <img src="./img/svg/header/account.svg" alt="">
          </a>
       </nav>
 
-      <h1 class="f-1 fw-1 c-1 header-title">Explore Inovações Tecnológicas<span class="c-4">.</span></h1>
+      <h1 class="ttf-1 header-title">Explore Inovações Tecnológicas<span class="c-4">.</span></h1>
    </header>
 
-   <main class="bg-2 about" id="about">
-      <h1 class="f-1 fw-3 tt-1 upper-text c-1 grid-span">Sobre Nós<span class="detail-c-1">.</span></h1>
+   <main class="about" id="about">
+      <h2 class="ttf-2 c-1">Sobre Nós<span class="c-4">.</span></h1>
 
-      <ul class="flex jf-c-cnt question-list">
-         <li class="about-question">
-            <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-1.svg" alt="" class="wh-2">
-               <h2 class="f-1 fw-1 tt-2 c-1 upper-text">Quem somos?</h2>
-            </div>
+         <ul class="about-question-list">
+            <li class="about-question-container">
+               <div class="question">
+                  <img src="./img/svg/about/question-1.svg" alt="" class="ics-1">
+                  <h3 class="ttf-3">Quem somos?</h3>
+               </div>
 
-            <p class="f-1 txt-1 c-1">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
-               smartphones, laptops e
-               acessórios.
-            </p>
-         </li>
+               <p class="txf-1">Somos uma empresa apaixonada por tecnologia, oferecendo inovação em
+                  smartphones, laptops e acessórios.
+               </p>
+            </li>
 
-         <li class="about-question">
-            <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-2.svg" alt="" class="wh-2">
-               <h2 class="f-1 fw-1 tt-2 c-1">O que fazemos?</h2>
-            </div>
+            <li class="about-question-container">
+               <div class="question">
+                  <img src="./img/svg/about/question-2.svg" alt="" class="ics-1">
+                  <h3 class="ttf-3">O que fazemos?</h3>
+               </div>
 
-            <p class="f-1 txt-1 c-1">Nosso foco é proporcionar uma experiência tecnológica excepcional,
-               oferecendo uma ampla variedade de produtos inovadores, como smartphones, laptops e acessórios de alta
-               qualidade.</p>
-         </li>
+               <p class="txf-1">Nosso foco é proporcionar uma experiência tecnológica excepcional,
+                  oferecendo uma ampla variedade de produtos inovadores, como smartphones, laptops e acessórios de alta
+                  qualidade.</p>
+            </li>
 
-         <li class="about-question">
-            <div class="question-container flex g-10">
-               <img src="./img/svg/about/question-3.svg" alt="" class="wh-2">
-               <h2 class="f-1 fw-1 tt-2 c-1">Por quê?</h2>
-            </div>
+            <li class="about-question-container">
+               <div class="question">
+                  <img src="./img/svg/about/question-3.svg" alt="" class="ics-1">
+                  <h3 class="ttf-3">Por quê?</h3>
+               </div>
 
-            <p class="f-1 txt-1 c-1">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
-         </li>
-
-      </ul>
+               <p class="txf-1">Porque acreditamos que a tecnologia tem o poder de transformar vidas.</p>
+            </li>
+         </ul>
    </main>
 
    <div class="parallax-image"></div>
 
-   <section class="grid contact-section" id="contact">
-      <h1 class="f-1 fw-3 tt-1 c-2 upper-text grid-span">Fale Conosco<span class="c-4">.</span></h1>
+   <section class="contact" id="contact">
+      <h1 class="ttf-2">Fale Conosco<span class="c-4">.</span></h1>
 
-      <img src="./img/contact-image.png" alt="">
+      <div class="contact-form-container">
+         <form action="/" class="contact-form">
 
-      <form action="/" class="bg-3 contact-form">
+            <div class="input-container ">
+               <img src="./img/svg/contact/user-icon.svg" alt="" class="ics-1">
+               <label for="name" class="input-label if-1" id="name-label">Nome</label>
+               <input type="text" class="input if-2" id="name" placeholder="" required>
+            </div>
 
-         <div class="input-container flex">
-            <img src="./img/svg/contact/user-icon.svg" alt="" class="wh-2">
-            <input type="text" class="input f-1 flex-1" id="name" placeholder=" " required>
-            <label for="name" class="input-label f-2 al-sf-cnt">Nome</label>
-         </div>
+            <div class="input-container ">
+               <img src="./img/svg/contact/mail-icon.svg" alt="" class="ics-1">
+               <label for="email" class="input-label if-1" id="email-label">E-mail</label>
+               <input type="email" class="input if-2" id="email" placeholder="" required>
+            </div>
 
-         <div class="input-container flex">
-            <img src="./img/svg/contact/mail-icon.svg" alt="" class="wh-2">
-            <input type="email" class="input f-1 flex-1" id="email" placeholder=" " required>
-            <label for="email" class="input-label f-2 al-sf-cnt">E-mail</label>
-         </div>
+            <div class="input-container">
+               <img src="./img/svg/contact/message-icon.svg" alt="" class="ics-1">
+               <label for="message" class="input-label if-1" id="message-label">Mensagem</label>
+               <textarea name="" class="input message-input if-2" id="message" placeholder="" required></textarea>
+            </div>
 
-         <div class="input-container flex">
-            <img src="./img/svg/contact/message-icon.svg" alt="" class="wh-2 al-sf-st">
-            <textarea name="" id="" class="input f-1 flex-1 message-input" id="message" placeholder=" "
-               required></textarea>
-            <label for="message" class="input-label f-2 message-label">Mensagem</label>
-         </div>
-
-         <button class="btn-3 fw-3 upper-text send-btn">Enviar</button>
-      </form>
-
+            <button class="btn-1 send-btn">Enviar</button>
+         </form>
+         <img src="./img/contact-image.png" alt="">
+      </div>
    </section>
 
    <script src="./js/dropdown.js"></script>
    <script src="./js/mobile-menu-option.js"></script>
+   <script src="./js/input-label.js"></script>
 </body>
 
 </html>

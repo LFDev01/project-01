@@ -5,50 +5,42 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Minha Conta</title>
-   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-   <main class="grid main">
-      <section class="bg-1 col-1">
+   <main class="main">
+      <section class="col-1">
 
-         <div class="header-icon">
-            <a href="../../index.html">
-               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="wh-3">
-                  <path
-                     d="M7.99992 25.3333H11.9999V17.3333H19.9999V25.3333H23.9999V13.3333L15.9999 7.33333L7.99992 13.3333V25.3333ZM5.33325 28V12L15.9999 4L26.6666 12V28H17.3333V20H14.6666V28H5.33325Z"
-                     fill="#EDEDED" />
-               </svg>
-            </a>
-         </div>
+         <a href="../../index.html"><img src="./img/svg/main/home.svg" alt="" class="ics-1"></a>
 
       </section>
 
-      <section class="grid al-c-st col-2">
-         <h1 class="tt-4 f-1 fw-1 c-1">Bem-vindo de volta! Insira suas credenciais para acessar sua conta
-            <span>.</span>
+      <section class="col-2">
+         <div class="bg-opacity"></div>
+
+         <h1 class="ttf-8">Bem-vindo de volta! Insira suas credenciais para acessar sua conta<span>.</span>
          </h1>
          <form action="" class="login-form">
-            <div class="input-container flex">
-               <img src="./img/svg/main/mail-icon.svg" class="wh-2" alt="">
-               <input type="email" id="email" placeholder=" " class="input f-1 flex-1">
-               <label for="email" class="input-label al-sf-cnt">E-mail</label>
+            <div class="input-container">
+               <img src="./img/svg/main/mail-icon.svg" alt="" class="ics-1">
+               <label for="email" class="input-label if-1" id="email-label">E-mail</label>
+               <input type="email" id="email" class="input if-2" required>
             </div>
 
-            <div class="input-container flex">
-               <img src="./img/svg/main/password-icon.svg" class="wh-2 " alt="">
-               <input type="password" id="password" placeholder=" " class="input f-1 flex-1">
-               <label for="password" class="input-label al-sf-cnt">Senha</label>
+            <div class="input-container">
+               <img src="./img/svg/main/password-icon.svg" alt="" class="ics-1">
+               <label for="password" class="input-label if-1" id="password-label">Senha</label>
+               <input type="password" id="password" class="input if-2" required>
             </div>
 
-            <button class="login-btn btn-3">Entrar</button>
+            <button class="login-btn btn-2">Entrar</button>
          </form>
 
          <footer class="footer">
-            <h2 class="tt-5 c-1 f-2 fw-1">Não possui uma conta?</h2>
-            <p class="f-1 c-1 fw-3"><a href="" class="c-4">Registre-se</a> hoje para acessar ofertas exclusivas, receber
+            <h2 class="ttf-9">Não possui uma conta?</h2>
+            <p class="txf-8"><a href="">Registre-se</a> hoje para acessar ofertas exclusivas, receber
                atualizações sobre os últimos
                lançamentos e personalizar sua experiência de compras.</p>
          </footer>
@@ -56,6 +48,7 @@
       </section>
    </main>
 
+   <script src="../../js/input-label.js"></script>
 </body>
 
 </html>

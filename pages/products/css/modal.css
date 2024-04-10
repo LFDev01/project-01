@@ -1,0 +1,323 @@
+.purchase-modal {
+   display: none;
+   background: linear-gradient(180deg, #EDEDED 0%, #DEDEDE 100%);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   margin: 0 auto;
+   opacity: 0;
+   padding: 20px;
+   max-width: 350px;
+   transition: all 0.8s;
+   box-sizing: border-box;
+   padding-bottom: 0px;
+}
+
+.purchase-modal-content {
+   padding: 20px;
+}
+
+.purchase-modal.modal-active {
+   margin-top: 100px;
+   opacity: 1;
+}
+
+.exit-btn {
+   margin-left: auto;
+   font-size: 1.25rem;
+   font-weight: 600;
+   background-image: url("../img/svg/close-icon.svg");
+   background-repeat: no-repeat;
+   width: 24px;
+   height: 24px;
+   transition: all .2s;
+   cursor: pointer;
+}
+
+.exit-btn:hover {
+   background-image: url("../img/svg/close-icon-hover.svg");
+}
+
+.exit-btn:active {
+   transform: scale(1.1);
+}
+
+.modal-background-effect {
+   display: none;
+   position: fixed;
+   background-color: #0e0e0e80;
+   top: 0px;
+   bottom: 0px;
+   opacity: 0;
+   width: 100%;
+   transition: 1s;
+}
+
+.modal-background-effect.modalbg-active {
+   opacity: 1;
+}
+
+.purchase-modal-content {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.purchase-modal-content>img {
+   max-width: 270px;
+   height: 400px;
+   object-fit: cover;
+}
+
+.purchase-modal-content h1 {
+   margin-top: 20px;
+}
+
+.product-data>span {
+   display: block;
+   margin-top: 10px;
+}
+
+.product-qtd {
+   display: flex;
+   width: max-content;
+   padding: 0px 5px;
+   gap: 20px;
+   margin-top: 10px;
+   align-items: center;
+}
+
+.product-qtd span,
+.product-qtd button {
+   font-family: "Roboto", sans-serif;
+}
+
+.product-qtd span {
+   font-size: 1.25rem;
+}
+
+.product-qtd button {
+   background: none;
+   cursor: pointer;
+   font-size: 2rem;
+}
+
+.product-qtd button:active {
+   transform: scale(1.25);
+}
+
+.payment-method {
+   margin-top: 20px;
+}
+
+.payment-method-options {
+   display: grid;
+   grid-template-columns: repeat(5, auto);
+   justify-content: start;
+   gap: 20px 10px;
+   margin-top: 10px;
+}
+
+.payment-method-options>input,
+.payment-method-options label {
+   cursor: pointer;
+}
+
+.option-container {
+   display: flex;
+   align-content: center;
+   gap: 5px;
+}
+
+.payment-option {
+   all: unset;
+   display: flex;
+   outline: none;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background-color: var(--c-7);
+   justify-content: center;
+}
+
+.payment-option::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   place-self: center;
+   transition: .2s;
+}
+
+.payment-option:checked::before {
+   background-color: var(--c-2);
+}
+
+#card {
+   margin-left: 20px;
+}
+
+.payment-option-1,
+.payment-option-2 {
+   display: none;
+   grid-column: 1 / -1;
+}
+
+.payment-option-1 button {
+   background-color: var(--c-7);
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   padding: 5px;
+   font: inherit;
+   cursor: pointer;
+   border: 2px solid transparent;
+   transition: .2s;
+}
+
+.payment-option-1 button {
+   padding: 10px;
+}
+
+.payment-option-1 button:focus {
+   border-color: var(--c-2);
+}
+
+#full:checked~.payment-option-1 {
+   display: flex;
+   gap: 20px;
+}
+
+#card:checked~.payment-option-2 {
+   display: block;
+}
+
+.payment-input-container {
+   position: relative
+}
+
+.payment-input-container,
+.two-col-container {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+.two-col-container {
+   flex: 1;
+}
+
+.payment-input-container+.payment-input-container {
+   margin-top: 10px;
+}
+
+.modal-input:hover,
+.modal-input:focus {
+   border-color: #706DE0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+   opacity: 0;
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+}
+
+.modal-input::placeholder {
+   color: var(--c-5);
+}
+
+.hardware-spechs {
+   margin-top: 40px;
+}
+
+.sep {
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: var(--c-2);
+}
+
+.hardware-title {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.spechs-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.spech {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+}
+
+.confirm-buy-btn {
+   display: flex;
+   gap: 5px;
+   margin-top: 20px;
+   cursor: pointer;
+   align-items: center;
+}
+
+.confirm-buy-btn:active {
+   transform: scale(1.05);
+}
+
+@media screen and (min-width: 1000px) {
+   .purchase-modal {
+      max-width: 920px;
+   }
+
+   .purchase-modal-content {
+      grid-template-columns: auto 1fr;
+      gap: 40px;
+   }
+
+   .purchase-modal-content>img {
+      max-width: 300px;
+      height: 450px;
+   }
+
+   .purchase-modal.modal-active {
+      margin-top: 100px;
+   }
+
+   .payment-option {
+      width: 20px;
+      height: 20px;
+   }
+
+   .payment-option::before {
+      width: 10px;
+      height: 10px;
+   }
+
+   .payment-option-1 button {
+      max-width: 120px;
+   }
+
+   .spechs-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 40px;
+   }
+
+   .payment-input-container input,
+   .payment-input-container select {
+      height: 45px;
+   }
+
+   .confirm-buy-btn {
+      margin-top: 40px;
+      gap: 10px;
+   }
+}

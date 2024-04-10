@@ -1,0 +1,5 @@
+@import "../../../css/utils/global/global.css";
+@import "./background.css";
+@import "./header.css";
+@import "./product-list.css";
+@import "./modal.css";

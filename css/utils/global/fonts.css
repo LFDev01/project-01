@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Titillium+Web:wght@400;600;700&display=swap');
+
+.ttf-1,
+.ttf-4,
+.ttf-8,
+.ttf-9,
+.txf-1,
+.txf-8 {
+   color: var(--c-1);
+}
+
+.ttf-2,
+.ttf-3,
+.ttf-4,
+.ttf-6,
+.ttf-7,
+.hbf,
+.hbf-2,
+.txf-4,
+.txf-5,
+.txf-7 {
+   text-transform: uppercase;
+}
+
+.txf-2,
+.txf-3,
+.txf-4,
+.txf-5,
+.txf-6,
+.if-1,
+.ttf-5,
+.ttf-6,
+.ttf-7 {
+   color: var(--c-2);
+}
+
+.ttf-3,
+.hbf {
+   color: var(--c-3);
+}
+
+.ttf-2,
+.txf-1 {
+   text-align: center;
+}
+
+.ttf-1 {
+   font: 600 2rem/1.1 "Titillium Web", sans-serif;
+}
+
+.ttf-2 {
+   font: 600 2rem/1.1 "Titillium Web", sans-serif;
+}
+
+.ttf-3 {
+   font: 400 1.25rem/1.3 "Titillium Web", sans-serif;
+}
+
+.ttf-4 {
+   font: 600 1.25rem/1.3 "Titillium Web", sans-serif;
+}
+
+.ttf-5 {
+   font: 400 1rem/1.3 "Titillium Web", sans-serif;
+}
+
+.ttf-6 {
+   font: 400 1.25rem/1.3 "Titillium Web", sans-serif;
+}
+
+.ttf-7 {
+   font: 400 1rem/1.3 "Titillium Web", sans-serif;
+}
+
+.ttf-7::before {
+   display: inline-block;
+   content: "";
+   width: 16px;
+   height: 3px;
+   background-color: var(--c-4);
+}
+
+.ttf-8 {
+   font: 400 1.5rem/1.3 "Titillium Web", sans-serif;
+   max-width: 360px;
+}
+
+.ttf-9 {
+   font: 400 1.125rem/1.3 "Roboto Condensed", sans-serif;
+}
+
+.hbf {
+   font: 400 1rem/1.3 "Roboto Condensed", sans-serif;
+}
+
+.hbf-2 {
+   font: 400 0.75rem/1.3 "Roboto Condensed", sans-serif;
+}
+
+.txf-1 {
+   font: 600 0.875rem/1.3 "Titillium Web", sans-serif;
+}
+
+.txf-2 {
+   font: 400 0.875rem/1.3 "Titillium Web", sans-serif;
+}
+
+.txf-3 {
+   font: 400 0.75rem/1.3 "Roboto", sans-serif;
+}
+
+.txf-4 {
+   font: 400 0.875rem/1.3 "Roboto Condensed", sans-serif;
+}
+
+.txf-5 {
+   font: 400 0.75rem/1.3 "Roboto", sans-serif;
+}
+
+.txf-6 {
+   font: 400 0.875rem/1.3 "Roboto", sans-serif;
+}
+
+.txf-7 {
+   font: 400 0.75rem/1.3 "Titillium Web", sans-serif;
+   color: var(--c-5);
+}
+
+.txf-8 {
+   font: 400 0.875rem/1.3 "Titillium Web", sans-serif;
+}
+
+.if-1 {
+   font: 400 0.875rem/1.3 "Roboto Condensed", sans-serif;
+}
+
+.if-2 {
+   font: 400 0.875rem/1.3 "Titillium Web", sans-serif;
+   color: var(--c-5);
+}
+
+@media screen and (min-width: 1000px) {
+   .ttf-1 {
+      font-size: 6rem;
+   }
+
+   .ttf-2 {
+      font-size: 4rem;
+   }
+
+   .ttf-3 {
+      font-size: 2rem;
+   }
+
+   .ttf-4 {
+      font-size: 2rem;
+   }
+
+   .ttf-5 {
+      font-size: 1.5rem;
+   }
+
+   .ttf-6 {
+      font-size: 2rem;
+   }
+
+   .ttf-7 {
+      font-size: 1.5rem;
+   }
+
+   .ttf-8 {
+      font-size: 3rem;
+      max-width: 580px;
+   }
+
+   .txf-1 {
+      font-size: 1.25rem;
+   }
+
+   .txf-2,
+   .txf-3,
+   .txf-4 {
+      font-size: 1rem;
+   }
+
+   .txf-5,
+   .txf-7 {
+      font-size: 0.875rem;
+   }
+
+   .txf-8 {
+      font-size: 1.125rem;
+   }
+
+   .hbf {
+      font-size: 1.25rem;
+   }
+
+   .hbf-2 {
+      font-size: 1rem;
+   }
+
+   .if-1 {
+      font-size: 1.25rem;
+   }
+
+   .if-2 {
+      font-size: 1.25rem;
+   }
+}

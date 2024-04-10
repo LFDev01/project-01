@@ -4,10 +4,20 @@
    top: 0px;
    width: 100%;
    z-index: 1;
+   padding: 20px;
+   box-sizing: border-box;
 }
 
 .navigation-items {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.header-icon {
+   transition: .2s;
+}
+
+.header-icon:hover {
+   transform: scale(1.1);
 }

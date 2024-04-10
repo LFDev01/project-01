@@ -1,0 +1,130 @@
+.ics-1 {
+   width: 32px;
+   height: 32px;
+}
+
+.btn-1,
+.btn-2 {
+   display: block;
+   background-color: var(--c-2);
+   color: var(--c-1);
+   cursor: pointer;
+   text-transform: uppercase;
+   font-family: "Roboto Condensed", sans-serif;
+   line-height: 1.3;
+   font-weight: 500;
+}
+
+.btn-1 {
+   padding: 0.625rem 1.25rem;
+   font-size: 1.5rem;
+}
+
+.btn-2 {
+   padding: 0.625rem 1.25rem;
+   font-size: 0.875rem;
+}
+
+.btn-3 {
+   font-family: "Titillium Web", sans-serif;
+   font-size: 0.75rem;
+   color: var(--c-8);
+   background-color: var(--c-4);
+   padding: 10px;
+   text-transform: uppercase;
+}
+
+.input {
+   width: 100%;
+   display: block;
+   background-color: var(--c-1);
+   border: 2px solid transparent;
+   outline: none;
+   transition: .2s;
+   padding: 10px;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.input-label {
+   position: absolute;
+   top: 12px;
+   left: 55px;
+   transition: .2s;
+   border-bottom: 3px solid transparent;
+   z-index: 1;
+   color: var(--c-2);
+}
+
+.input-label.label-effect {
+   transform: translateY(-31px);
+   border-color: var(--c-1);
+}
+
+.input-label-2 {
+   position: absolute;
+   left: 50px;
+   top: 13px;
+   z-index: 1;
+}
+
+.input:hover,
+.input:focus {
+   border-color: #706DE0;
+}
+
+.input-container+.input-container {
+   margin-top: 25px;
+}
+
+.bg-opacity {
+   width: 100%;
+   height: 100%;
+   background-color: #0e0e0e80;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+   .ics-1 {
+      width: 48px;
+      height: 48px;
+   }
+
+   .input-container+.input-container {
+      margin-top: 50px;
+   }
+
+   .input-label {
+      left: 85px;
+   }
+
+   .input-label.label-effect {
+      transform: translateY(-39px);
+   }
+
+   .btn-1,
+   .btn-2 {
+      transition: .2s;
+   }
+
+   .btn-1:hover,
+   .btn-2:hover {
+      transform: scale(1.1);
+   }
+
+   .btn-1 {
+      font-size: 1.5rem;
+      padding: 1rem 2.5rem;
+   }
+
+   .btn-2 {
+      font-size: 1rem;
+   }
+
+   .btn-3 {
+      padding: 10px;
+      font-size: 1rem;
+   }
+}

@@ -9,7 +9,4 @@ navMenu.forEach((item) => {
    item.addEventListener("click", hideMobileMenu);
 })
 
-const menu = document.querySelector(".mobile-menu");
-
-const parallaxImage = document.querySelector(".parallax-image");
-window.addEventListener("scroll", changeNavColors);
+const menu = document.querySelector("#mobile-menu");

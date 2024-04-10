@@ -1,8 +1,12 @@
 :root {
    --c-1: #F7F7F7;
-   --c-2: #1A1A1A;
+   --c-2: #0E0E0E;
    --c-3: #EDEDED;
    --c-4: #706DE0;
+   --c-5: #717171;
+   --c-6: #DEDEDE;
+   --c-7: #C1C1C1;   
+   --c-8: #090826;
 }
 
 .c-1 {
@@ -21,6 +25,6 @@
    color: var(--c-4);
 }
 
-body {
-   background-image: none;
+.c-5 {
+   color: var(--c-5);
 }

@@ -1,5 +1,94 @@
-@import "../../../css/resets.css";
-@import "../../../css/fonts.css";
-@import "../../../css/scroll.css";
-@import "../../../css/utilitary.css";
-@import "./login.css";
+.main {
+   display: grid;
+   grid-template-columns: 1fr;
+   height: 100vh;
+}
+
+.col-1 {
+   display: none;
+   background-color: var(--c-2);
+   height: 100%;
+}
+
+.col-1 a {
+   place-self: start;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+
+.col-2 {
+   background-image: url("../img/background.jpg");
+   background-position: center;
+   padding: 0px 20px;
+   padding-top: 50px;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.login-form {
+   margin-top: 60px;
+}
+
+.input-container {
+   display: flex;
+   gap: 10px;
+   position: relative;
+}
+
+.input {
+   flex: 1;
+}
+
+.input-label.label-effect {
+   color: var(--c-1);
+}
+
+.login-btn {
+   margin-top: 40px;
+}
+
+.footer {
+   margin-top: 80px;
+}
+
+.footer p {
+   margin-top: 10px;
+}
+
+.col-2 h1,
+.login-form,
+.footer {
+   position: relative;
+   z-index: 1;
+}
+
+@media screen and (min-width: 1000px) {
+   .main {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .input-label {
+      left: 90px;
+   }
+
+   .input-container {
+      gap: 20px;
+   }
+
+   .col-1 {
+      display: grid;
+   }
+
+   .col-2 {
+      padding: 60px;
+   }
+
+   .login-form,
+   .footer {
+      margin-top: 120px;
+   }
+
+   .login-btn {
+      margin-top: 80px;
+   }
+}
